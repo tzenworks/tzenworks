@@ -5,26 +5,48 @@ const { frontmatter } = Astro.props;
 ---
 
 <Layout logoState="trimmed" pageTitle={frontmatter.title}>
-    <div
+    <!-- <div
         id="headerImageDiv"
         class="w-full bg-cover bg-center h-[calc(60vh)] bg-dough flex items-end py-6"
         style=`background-image: url(${frontmatter.heroImage.src})`
     >
-        <h1 class="font-display font-bold text-8xl drop-shadow-xl">
+        <h1 class="ml-12 mb-4 font-display font-bold text-8xl drop-shadow-xl">
             {frontmatter.title}
         </h1>
-    </div>
-    <div class="article mr-52">
-        <div id="articleMeta">
+    </div> -->
+    <figure
+        class="headerOverlay bg-cover bg-center h-[calc(60vh)] bg-hvit flex items-end relative"
+        style=`background-image: url(${frontmatter.heroImage.src})`
+    >
+        <figcaption
+            class="z-50 ml-12 mb-6 text-8xl absolute font-display font-bold"
+        >
+            {frontmatter.title}
+        </figcaption>
+    </figure>
+    <div class="article mr-44">
+        <div id=" articleMeta">
             {frontmatter.description}
         </div>
         <div class="articleContent">
             <slot />
         </div>
     </div>
-</Layout>
 
-<style>
-    #articleContent {
-    }
-</style>
+    <style>
+        .headerOverlay::before {
+            content: "";
+            z-index: 10;
+            height: 100%;
+            width: 100%;
+            display: block;
+            position: absolute;
+            background: linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.8) 0%,
+                rgba(0, 0, 0, 0.5) 25%,
+                rgba(0, 0, 0, 0) 70%
+            );
+        }
+    </style>
+</Layout>

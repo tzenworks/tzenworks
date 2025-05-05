@@ -6,7 +6,9 @@ import Card from "@/components/ui/WorkCard.astro";
 const entires = await getCollection("work");
 ---
 
-<div class="grid-wrapper">
+<div
+    class="grid-wrapper grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 pt-8 pr-8 pl-2"
+>
     {
         entires.map((entry) => (
             <>
@@ -15,3 +17,18 @@ const entires = await getCollection("work");
         ))
     }
 </div>
+
+<!--
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+      {destinations.map((destination) => (
+        <div key={destination.id} className="relative rounded-xl overflow-hidden shadow-lg">
+          <div
+            className="h-64 bg-auto md:bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${destination.src})` }}
+          />
+          <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-4">
+            <h3 className="text-white text-xl font-bold">{destination.title}</h3>
+            <p className="text-white">{destination.price}</p>
+          </div>
+        </div>
+-->

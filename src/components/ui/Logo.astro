@@ -81,12 +81,12 @@ const { class: logoState, ...rest } = Astro.props;
     }
     /* if logoState = trimmed, set the opacity to zero on all letters except the t. */
     .trimmed g {
-        opacity: 0;
+        display: none;
         transition-duration: 500;
     }
 
     .footerLogo {
         fill: #ff9f1c;
-        opacity: 1;
+        display: relative;
     }
 </style>

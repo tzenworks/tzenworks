@@ -9,20 +9,20 @@ interface Props {
 const { logoState = "trimmed" } = Astro.props;
 ---
 
-<nav class="fixed flex flex-col h-[calc(50vh)] w-full max-w-[30rem] px-12">
-    <div id="logoContainer" class="my-8 pt-4">
+<nav class="fixed flex flex-col h-[calc(50vh)] w-full max-w-[30rem]">
+    <div id="logoContainer" class="my-8 ml-[calc(52px)]">
         <a href="/">
             <Logo class={logoState} />
         </a>
     </div>
     <div
         id="navButtons"
-        class="relative flex flex-col h-[calc(30vh)] w-full max-w-[10rem] *:hover:text-oransje *:duration-200 text-[27px] justify-around"
+        class="relative flex flex-col h-[calc(30vh)] w-full max-w-[10.5rem] *:hover:text-oransje *:duration-200 text-[27px] justify-around text-center"
     >
         <!-- Make this a ul. -->
         <a href="/work" class="">work</a>
         <a href="">about</a>
-        <a href="">contact</a>
+        <a href="">mail</a>
         <a href="/blog">blog</a>
     </div>
 </nav>

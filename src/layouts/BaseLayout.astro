@@ -24,9 +24,9 @@ const { logoState = "", pageTitle = "grphdsgn" } = Astro.props;
         <ClientRouter />
     </head>
 
-    <body class="min-h-[calc(200vh)]">
+    <body class="">
         <Navbar logoState={logoState} transition:animate="slide" />
-        <main class="min-h-[calc(200vh)] ml-52">
+        <main class="min-h-[calc(100vh)] mb-60 ml-44">
             <slot />
         </main>
         <Footer />
