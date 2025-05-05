@@ -1,0 +1,28 @@
+---
+title: 'tzen.work (portfolio, this site!)'
+slug: 'portfolio-page'
+heroImage: './assets/portfolio/portfolio-mockups.png'
+tags: ['Noroff', 'Web-design', 'Development']
+category: 'student work/personal'
+description: "Astro is pretty sick."
+---
+
+import Paragraph from '@/components/ui/ArticleParagraph.astro';
+export const components = {p: Paragraph};
+import { Image } from 'astro:assets';
+import mockups from './assets/portfolio/moremockups.png';
+import newtzen from './assets/portfolio/tzenworknew.png';
+
+This was a Figma project, and the assignment required a working, interactive prototype. My prototype was fairly barebones, as I thought my time would be better spent actually building the website instead. I saw this as a great oppurtunity to learn the Astro framework,
+which was fairly new, but extremely powerful at the time, and even more so now.
+
+My goal was to build a strong foundation, utilizing what we call Content Collections, which allow Astro to build webpages from alternative sources of information. The content and text you are reading right now is not written in HTML, it is written in Markdown, and Astro
+has constructed all of the work-pages on its own based on a highly modular template. This saves a lot of time when its time to add more work entries.
+
+<Image src={mockups} alt="Various mockups" class="lg:w-[60vw] xl:w-[100vw] lg:mx-auto w-auto m-0 border-2" />
+
+I didn't spend much time on design mockups, I wanted to go for a layout with lots of whitespace, and minimal distractions. I want this page to focus on one thing and one thing only, showing my work. I decided on agressively rounding all corners, as this is something I haven't seen much of from before. That said, most of my time was spent planning the back-end part of the site.
+
+<Image src={newtzen} alt="Various mockups" class="lg:w-[60vw] xl:w-[100vw] lg:mx-auto w-auto m-0 border-2" />
+I haven't worked much on this site the last year, and Astro has gotten a lot more powerful and feature-rich since I started on this site. My knowledge and understanding of the language has improved as well, so when I revisit the codebase, I see a lot of potential changes.
+I have taken the oppurtunity to start over, some early mockups above. Super stoked.

@@ -1,0 +1,25 @@
+---
+title: 'Lakrids by Bulow'
+heroImage: './assets/bulow/lakridsBoth.png'
+slug: 'lakrids-by-bulow'
+category: 'student work'
+tags: ['Noroff', 'Packaging', 'Concept', 'Layout']
+description: "Creative packaging with a maximalistic look."
+---
+import Paragraph from '@/components/ui/ArticleParagraph.astro';
+export const components = {p: Paragraph};
+import { Image } from 'astro:assets';
+import lakridsBoth from './assets/bulow/lakridsBoth.png';
+import lakridsCollage from './assets/bulow/lakridsCollage.png';
+import lakridsBowl from './assets/bulow/lakridsBowl.png';
+
+<h2 class="font-bold">Lakrids by Bülow - (Packaging)</h2>
+Student work, 1st year at Noroff. The assignment involved redesigning an existing products' packaging in the style of **maximalism**. I chose the danish liquorice brand, and challenged their normally ultra-minimalistic design language. The challenge was creating maximalist compositions from many minimalistic elements. Great fun.
+
+<Image src={lakridsBoth} alt="The two pieces of packaging, printed and assembled."/>
+Two existing flavours, with a maximalist twist.
+
+<Image src={lakridsCollage} alt="Various close-ups of the packaging."/>
+
+<Image src={lakridsBowl} alt="The bowl hidden under the lid."/>
+The packaging we were forced to work with was very interesting, a box in two parts - a bowl and a lid. Upon removing the lid, the bowl automatically unfolded itself like a flower blooming.

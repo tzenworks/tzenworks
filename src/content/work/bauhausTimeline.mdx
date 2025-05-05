@@ -1,0 +1,19 @@
+---
+title: 'Graphic Design Timeline, Bauhaus style'
+slug: 'bauhaus-timeline'
+category: 'student work'
+heroImage: './assets/bauhaus/timeline-popartsection.png'
+tags: ['Layout', 'Print', 'Illustration', 'Noroff']
+description: 'The history of graphic design, presented in a visual style inspired by Bauhaus.'
+---
+
+import Paragraph from '@/components/ui/ArticleParagraph.astro';
+export const components = {p: Paragraph};
+import { Image } from 'astro:assets';
+import tl1 from './assets/bauhaus/tl1.jpg';
+import tl2 from './assets/bauhaus/tl2.jpg';
+import tl3 from './assets/bauhaus/tl3.jpg';
+
+<Image src={tl1} alt="part of the timeline" class="lg:w-[60vw] xl:w-[40vw] lg:mx-auto w-auto m-0 border-2" />
+<Image src={tl2} alt="part of the timeline" class="lg:w-[60vw] xl:w-[40vw] lg:mx-auto w-auto m-0 border-2" />
+<Image src={tl3} alt="part of the timeline" class="lg:w-[60vw] xl:w-[40vw] lg:mx-auto w-auto m-0 border-2" />

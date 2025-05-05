@@ -1,0 +1,27 @@
+---
+title: 'Veksthuset'
+heroImage: './assets/veksthuset/poster-mockup.jpg'
+slug: 'veksthuset'
+category: 'student work'
+tags: ['Identity', 'Logo', 'Noroff', 'Marketing', 'Concept']
+description: "A playful redesign for one of Oslo's most iconic venues."
+---
+import Paragraph from '@/components/ui/ArticleParagraph.astro';
+export const components = {p: Paragraph};
+import { Image } from 'astro:assets';
+import veksthusetMockup from './assets/veksthuset/poster-mockup.jpg';
+import veksthusetLogo from './assets/veksthuset/veksthusetLogo.png';
+import vekstHusetAnim from './assets/veksthuset/veksthusetAnimated.mp4';
+
+Student work, 2nd year at Noroff. Veksthuset is an ambitious new musum part of Oslo's Natural History Museum, three highly modern greenhouses housing five of the Earth's climates. Our assignment was to create Veksthuset's visual identity and accompanying launch campaign.
+I wanted to create an identity that works with NHM's relatively <a class="underline" href="https://bleed.com/work/naturhistorisk-museum">new visual identity designed by Bleed Studio</a>. The task involved marketing strategy, After Effects animation and video.
+
+<Image src={veksthusetMockup} alt="Mockup of a Veksthuset poster - OBLIG03, second year at Noroff" />
+Mockup of a proposed marketing poster, the image on the poster was taken at Botanisk Hage, w/ Fujifilm XT-4.
+
+
+<Image src={veksthusetLogo} alt="Variations of Veksthuset logo - OBLIG03, second year at Noroff" class="border-2" />
+The logo, with many variations. Flexibility was the primary goal from the beginning of the design process. Very much inspired by Bleed Studio's work.
+
+<video src={vekstHusetAnim} id="video" autoplay muted loop playsinline class="border-2"></video>
+Animated in After Effects.
