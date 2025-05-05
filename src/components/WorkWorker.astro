@@ -1,0 +1,17 @@
+---
+import { getCollection } from "astro:content";
+
+import Card from "@/components/ui/WorkCard.astro";
+
+const entires = await getCollection("work");
+---
+
+<div class="grid-wrapper">
+    {
+        entires.map((entry) => (
+            <>
+                <Card entry={entry} />
+            </>
+        ))
+    }
+</div>

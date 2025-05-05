@@ -1,0 +1,30 @@
+---
+import Layout from "./BaseLayout.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout logoState="trimmed" pageTitle={frontmatter.title}>
+    <div
+        id="headerImageDiv"
+        class="w-full bg-cover bg-center h-[calc(60vh)] bg-dough flex items-end py-6"
+        style=`background-image: url(${frontmatter.heroImage.src})`
+    >
+        <h1 class="font-display font-bold text-8xl drop-shadow-xl">
+            {frontmatter.title}
+        </h1>
+    </div>
+    <div class="article mr-52">
+        <div id="articleMeta">
+            {frontmatter.description}
+        </div>
+        <div class="articleContent">
+            <slot />
+        </div>
+    </div>
+</Layout>
+
+<style>
+    #articleContent {
+    }
+</style>

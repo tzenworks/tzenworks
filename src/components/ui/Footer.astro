@@ -1,0 +1,38 @@
+---
+import { animate, createScope } from "animejs";
+import Logo from "./Logo.astro";
+---
+
+<footer
+    class="w-full bg-graa min-h-[40vh] text-oransje flex-col flex justify-between"
+>
+    <div class="min-w-full justify-between flex p-12">
+        <nav
+            class="relative flex flex-col h-[calc(20vh)] max-w-[20rem] *:hover:text-hvit *:duration-200 text-[27px] justify-between"
+        >
+            <a href="" class="">GitHub</a>
+            <a href="">LinkedIn</a>
+            <a href="">Instagram</a>
+        </nav>
+        <div class="">
+            <a
+                href="#"
+                class="md:text-5xl lg:text-6xl xl:text-[4.5rem] 2xl:text-[5.75rem] font-display hover:text-hvit duration-200"
+                >hello@tzenworks.com</a
+            >
+            <p class="text-2xl italic font-light mt-4">
+                Feel free to reach out in Norwegian!
+            </p>
+        </div>
+    </div>
+    <div class="min-w-full justify-between flex p-12 align-bottom">
+        <span class="text-xl italic font-light self-end">
+            Designed and developed by tzen using Astro, Anime.js and a lot of
+            iced coffee.
+        </span>
+
+        <div class="min-w-[25vw] ml-14">
+            <Logo class="footerLogo" />
+        </div>
+    </div>
+</footer>

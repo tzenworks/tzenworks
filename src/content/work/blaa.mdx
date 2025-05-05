@@ -1,0 +1,26 @@
+---
+title: 'Blå'
+description: "A playful redesign for one of Oslo's most iconic venues."
+slug: 'blaa-redesign'
+category: 'student work'
+heroImage: ./assets/blaa/blaaHeader.png
+tags: ['Identity', 'Logo', 'Noroff', 'Concept']
+
+---
+
+import Paragraph from '@/components/ui/ArticleParagraph.astro';
+export const components = {p: Paragraph};
+import { Image } from 'astro:assets';
+import blaaHeader from './assets/blaa/blaaHeader.png'
+import blaaMockups1 from './assets/blaa/blaaMockups1.png';
+import blaaMockups2 from './assets/blaa/blaaMockups2.png';
+import blaaAnim from './assets/blaa/blaaAnim.gif';
+
+Student work, my 3rd assignment at Noroff. Our first assignment with identity work. I was given the popular bar and music-venue Blå, whose logo I think is too rigid, and choice of blue - too blue (it reminds me of the Windows blue-screen).
+<Image src={blaaHeader} alt="logo + accompanying design elements"/>
+I immediately got to work on a logo, and after weeks of iteration, ended up with the design above, and its accompanying expressive lines and circles.
+
+<Image src={blaaMockups1} alt="Various mockups" class="lg:w-[60vw] xl:w-[40vw] lg:mx-auto w-auto m-0 border-2" />
+
+<Image src={blaaMockups2} alt="Two articles of clothing." class="lg:w-[60vw] xl:w-[40vw] lg:mx-auto w-auto m-0 border-2" />
+<Image src={blaaAnim} alt="Animated version of the logo, I would like to speed it up."/>

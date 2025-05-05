@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@font-face {
+    font-family: "PPRightSerif-Light";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("/fonts/PPRightSerif-Light.woff2") format("woff2");
+}
+@font-face {
+    font-family: "PPRightSerif-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("/fonts/PPRightSerif-Medium.woff2") format("woff2");
+}
+@font-face {
+    font-family: "PPRightSerif-WideFine";
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url("/fonts/PPRightSerif-WideFine.woff2") format("woff2");
+}
+@font-face {
+    font-family: "PPRightSerifMono";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("/fonts/PPRightSerifMono-Bold.woff2") format("woff2");
+}
+@theme {
+    --font-display: "PPRightSerif-WideFine";
+    --font-serif: "PPRightSerif-Light";
+    --font-serif-medium: "PPRightSerif-Medium";
+    --font-serif-mono: "PPRightSerifMono";
+    --color-svart: #08090a;
+    --color-hvit: #daddd8;
+    --color-oransje: #ff9f1c;
+    --color-graa: #26272c;
+}
+
+@layer components {
+    .articleContent {
+        p {
+            font-size: var(--text-2xl);
+        }
+    }
+}

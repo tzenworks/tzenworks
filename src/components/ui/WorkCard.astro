@@ -1,0 +1,23 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+// components
+const { entry } = Astro.props;
+
+type Props = {
+    entry: CollectionEntry<"work">;
+};
+
+const { title, slug, heroImage } = entry.data;
+---
+
+<article aria-label={title} class="work-card">
+    <a href=`/work/${slug}`>
+        <img src={heroImage.src} alt="" />
+        <div>
+            <h3>
+                {title}
+            </h3>
+        </div>
+    </a>
+</article>

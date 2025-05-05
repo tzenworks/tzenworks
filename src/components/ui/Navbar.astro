@@ -1,0 +1,28 @@
+---
+import { animate, createScope } from "animejs";
+import Logo from "./Logo.astro";
+
+interface Props {
+    logoState: string;
+}
+
+const { logoState = "trimmed" } = Astro.props;
+---
+
+<nav class="fixed flex flex-col h-[calc(50vh)] w-full max-w-[30rem] px-12">
+    <div id="logoContainer" class="my-8 pt-4">
+        <a href="/">
+            <Logo class={logoState} />
+        </a>
+    </div>
+    <div
+        id="navButtons"
+        class="relative flex flex-col h-[calc(30vh)] w-full max-w-[10rem] *:hover:text-oransje *:duration-200 text-[27px] justify-around"
+    >
+        <!-- Make this a ul. -->
+        <a href="/work" class="">work</a>
+        <a href="">about</a>
+        <a href="">contact</a>
+        <a href="/blog">blog</a>
+    </div>
+</nav>
