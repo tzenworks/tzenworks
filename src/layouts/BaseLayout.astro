@@ -8,9 +8,10 @@ import { ClientRouter, fade, slide } from "astro:transitions";
 interface Props {
     logoState?: string;
     pageTitle?: string;
+    statusMessage?: string;
 }
 
-const { logoState = "", pageTitle = "grphdsgn" } = Astro.props;
+const { logoState = "", pageTitle = "grphdsgn", statusMessage } = Astro.props;
 ---
 
 <!doctype html>
@@ -25,7 +26,11 @@ const { logoState = "", pageTitle = "grphdsgn" } = Astro.props;
     </head>
 
     <body class="">
-        <Navbar logoState={logoState} transition:animate="slide" />
+        <Navbar
+            logoState={logoState}
+            transition:animate="slide"
+            statusMessage={statusMessage}
+        />
         <main class="min-h-[calc(100vh)] mb-60 ml-44">
             <slot />
         </main>

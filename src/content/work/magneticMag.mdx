@@ -1,0 +1,32 @@
+---
+title: 'Magnetic Magazine'
+slug: 'magnetic-magazine'
+category: 'student work'
+tags: ['Editorial', 'Noroff', 'Cover', 'Concept']
+heroImage: ./assets/magnetic/magazineCover.png
+description: 'Studio photography and advertisement design.'
+---
+import Paragraph from '@/components/ui/ArticleParagraph.astro';
+export const components = {p: Paragraph};
+import { Image } from 'astro:assets';
+import cover from './assets/magnetic/magazineCover.png'
+import epSpread from './assets/magnetic/epSpread.png'
+import interview from './assets/magnetic/interviewSpread.png'
+import stray1 from './assets/magnetic/strayFirst.png'
+import stray2 from './assets/magnetic/straySecond.png'
+import contents from './assets/magnetic/tableOfContents.png'
+
+This assignment involved creating a physical magazine for Magnetic Magazine. Other than the contents of the articles (which I got to choose), everything had to be made from scratch, including the cover.
+
+<Image src={cover} alt="magazine cover featuring the cat from Stray" class="mx-auto"/>
+
+For the cover, I redesigned their logo, and had to choose an article to feature. Looking through their articles, I eventually stumbled upon a review of Stray - a fantastic, visually stunning video game. Taking inspiration from the magazine EDGE, I incorporated Stray's design language into both its article and the cover. The most notable elements is the graffiti, since the urban world of Stray features lots of graffiti.
+
+<Image src={epSpread} alt="a spread announcing an EP release"/>
+<Image src={interview} alt="a spread featuring an interview with Dan Azzo"/>
+
+Covering the editorial stuff, I focused on a fairly minimalistic look, with some colourful elements sprinkled throughout. Most of my time was spent on spacing and layout. Stray being the featured article, stands out from the rest with its background colour being black instead of white. The graffiti elements are also present.
+
+<Image src={stray1} alt="the first spread in the stray review"/>
+<Image src={stray2} alt="the second spread in the stray review"/>
+<Image src={contents} alt="the table of contents"/>

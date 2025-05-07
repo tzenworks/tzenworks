@@ -4,20 +4,27 @@ import Logo from "./Logo.astro";
 
 interface Props {
     logoState: string;
+    statusMessage?: string;
 }
 
-const { logoState = "trimmed" } = Astro.props;
+const { logoState = "trimmed", statusMessage } = Astro.props;
 ---
 
-<nav class="fixed flex flex-col h-[calc(50vh)] w-full max-w-[30rem]">
-    <div id="logoContainer" class="my-8 ml-[calc(52px)]">
-        <a href="/">
-            <Logo class={logoState} />
-        </a>
+<nav class="fixed flex flex-col h-[calc(50vh)] w-full max-w-[45rem] mt-4">
+    <div id="topBar" class="flex items-center">
+        <div id="logoContainer" class="my-8 ml-16 max-w-[30rem]">
+            <a href="/">
+                <Logo class={logoState} />
+            </a>
+        </div>
+        <p
+            class="ml-10 mt-1 text-lg hidden sm:inline"
+            set:html={statusMessage}
+        />
     </div>
     <div
         id="navButtons"
-        class="relative flex flex-col h-[calc(30vh)] w-full max-w-[10.5rem] *:hover:text-oransje *:duration-200 text-[27px] justify-around text-center"
+        class="relative flex flex-col h-[calc(30vh)] w-full max-w-[10.5rem] *:hover:text-oransje *:duration-200 text-2xl justify-around text-center"
     >
         <!-- Make this a ul. -->
         <a href="/work" class="">work</a>
